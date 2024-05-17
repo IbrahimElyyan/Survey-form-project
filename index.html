@@ -9,21 +9,31 @@
     <h1 id="title">Survey Form Project</h1>
     <p id="description">This is my first project in HTML/CSS, I will be making a form to showcase what I learned.</p>
     <form id="survey-form">
-      <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your name here" required/></label>
-      <label id="email-label" for="email">email: <input id="email" type="email" placeholder="Enter your email here" required></label>
-      <label id="number-label" for="number">Age:<input id="number" type="number" min="0" max="120" placeholder="Enter your age here"></label>
-      <select id="dropdown">
+      <div class="form-segment">
+        <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your name here" required/></label>
+      </div>
+      <div class="form-segment">
+        <label id="email-label" for="email">email: <input id="email" type="email" placeholder="Enter your email here" required></label>
+      </div>
+      <div class="form-segment">
+       <label id="number-label" for="number">Age:<input id="number" type="number" min="0" max="120" placeholder="Enter your age here"></label> 
+      </div>
+      <div class="form-segment">
+         <select id="dropdown">
         <option value="">(select one)</option>
-        <option value="1">Gaming</option>
-        <option value="2">Coding</option>
-        <option value="3">Sports</option>
-        <option value="4">Making videos</option>
+        <option value="gaming">Gaming</option>
+        <option value="coding">Coding</option>
+        <option value="sports">Sports</option>
+        <option value="makingVid">Making videos</option>
         <option value="5">Other</option>
       </select>
-      <label><input type="radio" name="user-role" value="student"/></label>
-      <label><input type="radio" name="user-role" value="recruiter"/></label>
-      <label><input type="radio" name="user-role" value="software-engineer"/></label>
-      <label><input type="radio" name="user-role" value="other"/></label>
+      </div>
+      <div class="form-segment">
+       <input type="radio" name="user-role" value="student"/>
+      <input type="radio" name="user-role" value="recruiter"/>
+      <input type="radio" name="user-role" value="software-engineer"/>
+      <input type="radio" name="user-role" value="other"/> 
+      </div>
     </form>
   </body>
 </html>
